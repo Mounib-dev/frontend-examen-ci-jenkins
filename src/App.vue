@@ -6,6 +6,9 @@ import { RouterLink, RouterView } from 'vue-router'
   <v-app>
     <v-navigation-drawer app permanent :width="200">
       <v-list-item link title="Accueil" to="/" prepend-icon="mdi-dashboard"> </v-list-item>
+      <v-list-item link title="Config" to="/Config" prepend-icon="mdi-dashboard"> </v-list-item>
+      <v-list-item link title="Groupes" to="/Groupes" prepend-icon="mdi-dashboard"> </v-list-item>
+      <v-list-item link title="Membres" to="/Membres" prepend-icon="mdi-dashboard"> </v-list-item>
     </v-navigation-drawer>
     <v-main>
       <RouterView />
