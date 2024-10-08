@@ -24,7 +24,7 @@ export default {
   },
 
   methods: {
-    async config_submit(config) {
+    async config_submit(config: any) {
       const body = config
       const response = await axios.post('https://localhost:3000/api/v1/config/set', config)
       console.log(response)
