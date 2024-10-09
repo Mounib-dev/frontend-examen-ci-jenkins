@@ -18,16 +18,16 @@
 
         <v-snackbar v-model="snackbar" :timeout="3000">
           {{ snackbarMessage }}
-          <template #action="{ attrs }">
+          <!-- <template #action="{ attrs }">
             <v-btn color="pink" text v-bind="attrs" @click="snackbar = false"> Fermer </v-btn>
-          </template>
+          </template> -->
         </v-snackbar>
       </v-form>
     </v-card-text>
   </v-card>
 </template>
-  
-  <script lang="ts">
+
+<script lang="ts">
 import { defineComponent, ref } from 'vue'
 import axios from 'axios'
 import { useRouter } from 'vue-router' // Importation de vue-router
@@ -83,11 +83,10 @@ export default defineComponent({
   }
 })
 </script>
-  
-  <style scoped>
+
+<style scoped>
 .v-card {
   max-width: 400px;
   margin: auto;
 }
 </style>
-  
