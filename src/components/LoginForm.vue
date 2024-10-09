@@ -32,6 +32,7 @@
 import { defineComponent, ref } from 'vue'
 import axios from 'axios'
 import { useRouter } from 'vue-router' // Importation de vue-router
+import { useAuthStore } from '@/stores/auth'
 
 export default defineComponent({
   name: 'LoginForm',
@@ -41,6 +42,8 @@ export default defineComponent({
     const valid = ref(false)
     const snackbar = ref(false)
     const snackbarMessage = ref('')
+
+    const authStore = useAuthStore()
 
     const router = useRouter() // Utilisation de vue-router
 
@@ -56,11 +59,13 @@ export default defineComponent({
         snackbar.value = true
 
         // Redirection vers /config
-        router.push('/config') // Rediriger vers la page /config
+        // Rediriger vers la page /config
 
         // Optionnel : afficher des informations supplémentaires
         console.log("ID de l'utilisateur :", response.data.userId)
         console.log("Rôle de l'utilisateur :", response.data.userRole)
+        await authStore.setUser(response.data.userId, response.data.userRole)
+        router.push('/config')
       } catch (error: any) {
         if (error.response) {
           // Gérer l'erreur venant du serveur
