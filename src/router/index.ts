@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import GroupesView from '../views/GroupesView.vue'
+import GroupsView from '../views/GroupsView.vue'
 import ConfigView from '../views/ConfigView.vue'
 import LoginView from '../views/LoginView.vue'
 
@@ -18,9 +18,9 @@ const router = createRouter({
       component: LoginView
     },
     {
-      path: '/Groupes',
-      name: 'groupes',
-      component: GroupesView
+      path: '/Groups',
+      name: 'groups',
+      component: GroupsView
     },
 
     {
