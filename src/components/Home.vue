@@ -12,14 +12,14 @@
     </v-row>
   </v-container>
 </template>
-  
-  <script lang="ts">
+
+<script lang="ts">
 import axios from 'axios'
 import { defineComponent } from 'vue'
 export default defineComponent({
   data() {
     return {
-      configs: [],
+      configs: [] as string[],
 
       configHeaders: [
         { text: 'usersNumber', value: 'usersNumber' },
@@ -46,10 +46,9 @@ export default defineComponent({
   }
 })
 </script>
-  
-  <style scoped>
+
+<style scoped>
 .v-toolbar-title {
   font-size: 18px;
 }
 </style>
-  

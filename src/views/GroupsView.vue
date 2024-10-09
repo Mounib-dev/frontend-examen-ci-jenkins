@@ -11,8 +11,8 @@
     </v-row>
   </v-container>
 </template>
-  
-  <script lang="ts">
+
+<script lang="ts">
 import { defineComponent } from 'vue'
 import axios from 'axios'
 import Groups from '../components/Groups.vue'
@@ -25,7 +25,7 @@ export default defineComponent({
     return {
       users: [],
       loading: false,
-      error: null
+      error: null as string | null
     }
   },
   mounted() {
@@ -44,17 +44,16 @@ export default defineComponent({
         this.loading = false
       }
     },
-    handleInvite(user) {
+    handleInvite(user: any) {
       // Handle the invite logic here, e.g., send an invitation email or update the user.
       console.log('Inviting user:', user)
     }
   }
 })
 </script>
-  
-  <style scoped>
+
+<style scoped>
 .text-center {
   text-align: center;
 }
 </style>
-  
