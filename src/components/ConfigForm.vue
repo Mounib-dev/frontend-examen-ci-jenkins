@@ -1,33 +1,35 @@
 <template>
   <v-container>
-    <v-form @submit.prevent="submitForm" ref="form" lazy-validation>
-      <!-- Users Number Field -->
-      <v-text-field
-        v-model="form.usersNumber"
-        label="Number of Users"
-        type="number"
-        required
-      ></v-text-field>
+    <v-col cols="8">
+      <v-form @submit.prevent="submitForm" ref="form" lazy-validation>
+        <!-- Users Number Field -->
+        <v-text-field
+          v-model="form.usersNumber"
+          label="Number of Users"
+          type="number"
+          required
+        ></v-text-field>
 
-      <!-- Groups Number Field -->
-      <v-text-field
-        v-model="form.groupsNumber"
-        label="Number of Groups"
-        type="number"
-        required
-      ></v-text-field>
+        <!-- Groups Number Field -->
+        <v-text-field
+          v-model="form.groupsNumber"
+          label="Number of Groups"
+          type="number"
+          required
+        ></v-text-field>
 
-      <!-- Last Group Option Selector -->
-      <v-select
-        v-model="form.lastGroupOptions"
-        :items="lastGroupOptions"
-        label="Select Group Option"
-        required
-      ></v-select>
+        <!-- Last Group Option Selector -->
+        <v-select
+          v-model="form.lastGroupOptions"
+          :items="lastGroupOptions"
+          label="Select Group Option"
+          required
+        ></v-select>
 
-      <!-- Submit Button -->
-      <v-btn type="submit" color="green" variant="text"> Save </v-btn>
-    </v-form>
+        <!-- Submit Button -->
+        <center><v-btn type="submit" color="blue"> Save </v-btn></center>
+      </v-form>
+    </v-col>
   </v-container>
 </template>
 
