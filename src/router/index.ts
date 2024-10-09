@@ -4,7 +4,6 @@ import GroupesView from '../views/GroupesView.vue'
 import ConfigView from '../views/ConfigView.vue'
 import LoginView from '../views/LoginView.vue'
 
-
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -28,7 +27,7 @@ const router = createRouter({
       path: '/Config',
       name: 'config',
       component: ConfigView
-    },
+    }
   ]
 })
 
