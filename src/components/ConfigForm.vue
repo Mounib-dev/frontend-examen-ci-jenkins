@@ -27,7 +27,7 @@
         ></v-select>
 
         <!-- Submit Button -->
-        <center><v-btn type="submit" color="blue"> Save </v-btn></center>
+        <v-btn type="submit" color="blue"> Save </v-btn>
       </v-form>
     </v-col>
   </v-container>

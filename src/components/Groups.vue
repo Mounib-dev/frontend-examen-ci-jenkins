@@ -1,5 +1,5 @@
 <template>
-  <h1><center>List of Users Without Groups</center></h1>
+  <h1>List of Users Without Groups</h1>
   <v-card>
     <v-card-title></v-card-title>
     <v-card-text>

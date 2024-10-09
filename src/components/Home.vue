@@ -2,7 +2,7 @@
   <v-container>
     <v-row>
       <v-col cols="8">
-        <h2><center>Admin Configuration</center></h2>
+        <h2>Admin Configuration</h2>
         <br />
         <v-card>
           <v-card-title> </v-card-title>

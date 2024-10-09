@@ -1,6 +1,6 @@
 <template>
   <v-col cols="6">
-    <h2><center>Connexion</center></h2>
+    <h2>Connexion</h2>
     <v-card>
       <v-card-title> </v-card-title>
       <v-card-text>
