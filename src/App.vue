@@ -32,12 +32,6 @@ export default {
 <template>
   <v-app>
     <v-navigation-drawer app permanent :width="200">
-<<<<<<< HEAD
-      <v-list-item link title="login" to="/login" prepend-icon="mdi-dashboard"> </v-list-item>
-      <v-list-item link title="Accueil" to="/" prepend-icon="mdi-dashboard"> </v-list-item>
-      <v-list-item link title="Config" to="/Config" prepend-icon="mdi-dashboard"> </v-list-item>
-      <v-list-item link title="Groups" to="/Groups" prepend-icon="mdi-dashboard"> </v-list-item>
-=======
       <v-list-item
         v-if="!isAuthenticated"
         link
@@ -60,7 +54,6 @@ export default {
       </v-list-item>
       <v-list-item v-if="userId" link title="Groupes" to="/Groupes" prepend-icon="mdi-dashboard">
       </v-list-item>
->>>>>>> 9adc14c (Conditionnal rendering depending on user is authenticated or not)
     </v-navigation-drawer>
     <v-main>
       <RouterView />
