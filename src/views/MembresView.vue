@@ -1,3 +1,0 @@
-<template>
-  <membres></membres>
-</template>
