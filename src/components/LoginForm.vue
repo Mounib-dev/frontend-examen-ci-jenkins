@@ -17,15 +17,16 @@
           <v-btn :disabled="!valid" class="center" color="primary" @click="login"> Connexion </v-btn
           ><br />
 
-        <v-snackbar v-model="snackbar" :timeout="3000">
-          {{ snackbarMessage }}
-          <!-- <template #action="{ attrs }">
+          <v-snackbar v-model="snackbar" :timeout="3000">
+            {{ snackbarMessage }}
+            <!-- <template #action="{ attrs }">
             <v-btn color="pink" text v-bind="attrs" @click="snackbar = false"> Fermer </v-btn>
           </template> -->
-        </v-snackbar>
-      </v-form>
-    </v-card-text>
-  </v-card>
+          </v-snackbar>
+        </v-form>
+      </v-card-text>
+    </v-card>
+  </v-col>
 </template>
 
 <script lang="ts">
