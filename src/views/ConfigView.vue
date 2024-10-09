@@ -1,6 +1,6 @@
 <template>
   <!-- Titre de la barre d'outils -->
-  <v-toolbar-title>Application Configuration</v-toolbar-title>
+  <h1><center>Admin Configuration</center></h1>
 
   <!-- Conteneur principal pour le formulaire de configuration -->
   <v-container>
