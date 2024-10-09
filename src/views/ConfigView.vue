@@ -1,34 +1,27 @@
 <template>
+  <!-- Titre de la barre d'outils -->
   <v-toolbar-title>Application Configuration</v-toolbar-title>
 
+  <!-- Conteneur principal pour le formulaire de configuration -->
   <v-container>
-    <config-form @submit-config="config_submit"></config-form>
+    <config-form @submit-config="handleConfigSubmit"></config-form>
   </v-container>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import ConfigForm from '../components/ConfigForm.vue' // Import du formulaire de configuration
 
-import ConfigForm from '@/components/ConfigForm.vue'
-import axios from 'axios'
-
-export default {
+export default defineComponent({
   components: {
-    ConfigForm
-  },
-
-  data() {
-    return {
-      config: []
-    }
+    ConfigForm // Déclaration du composant enfant
   },
 
   methods: {
-    async config_submit(config: any) {
-      const body = config
-      const response = await axios.post('https://localhost:3000/api/v1/config/set', config)
-      console.log(response)
+    handleConfigSubmit(configData: Record<string, any>) {
+      // Ici, tu peux faire des actions avec les données soumises, comme les envoyer à une API
+      console.log('Configuration soumise:', configData)
     }
   }
-}
+})
 </script>
