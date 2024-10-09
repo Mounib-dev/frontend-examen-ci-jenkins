@@ -1,5 +1,13 @@
 <template>
-  <h1>Bienvenue chez AMADA Test</h1>
+  <Home />
 </template>
 
-<script setup lang="ts"></script>
+<script lang="ts">
+import Home from '../components/Home.vue'
+import { defineComponent } from 'vue'
+export default defineComponent({
+  components: {
+    Home
+  }
+})
+</script>

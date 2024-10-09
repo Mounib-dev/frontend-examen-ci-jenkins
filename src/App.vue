@@ -8,7 +8,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <v-list-item link title="login" to="/login" prepend-icon="mdi-dashboard"> </v-list-item>
       <v-list-item link title="Accueil" to="/" prepend-icon="mdi-dashboard"> </v-list-item>
       <v-list-item link title="Config" to="/Config" prepend-icon="mdi-dashboard"> </v-list-item>
-      <v-list-item link title="Groupes" to="/Groupes" prepend-icon="mdi-dashboard"> </v-list-item>
+      <v-list-item link title="Groups" to="/Groups" prepend-icon="mdi-dashboard"> </v-list-item>
     </v-navigation-drawer>
     <v-main>
       <RouterView />

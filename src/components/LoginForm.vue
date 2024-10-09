@@ -1,20 +1,21 @@
 <template>
-  <v-card>
-    <v-card-title>
-      <h2>Connexion</h2>
-    </v-card-title>
-    <v-card-text>
-      <v-form ref="form" v-model="valid" lazy-validation>
-        <v-text-field v-model="email" label="Email" required type="email"></v-text-field>
+  <v-col cols="6">
+    <h2>Connexion</h2>
+    <v-card>
+      <v-card-title> </v-card-title>
+      <v-card-text>
+        <v-form ref="form" v-model="valid" lazy-validation>
+          <v-text-field v-model="email" label="Email" required type="email"></v-text-field>
 
-        <v-text-field
-          v-model="password"
-          label="Mot de passe"
-          required
-          type="password"
-        ></v-text-field>
+          <v-text-field
+            v-model="password"
+            label="Mot de passe"
+            required
+            type="password"
+          ></v-text-field>
 
-        <v-btn :disabled="!valid" color="primary" @click="login"> Connexion </v-btn>
+          <v-btn :disabled="!valid" class="center" color="primary" @click="login"> Connexion </v-btn
+          ><br />
 
         <v-snackbar v-model="snackbar" :timeout="3000">
           {{ snackbarMessage }}

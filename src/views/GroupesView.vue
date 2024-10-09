@@ -1,3 +1,0 @@
-<template>
-  <groupes></groupes>
-</template>
